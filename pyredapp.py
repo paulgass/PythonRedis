@@ -1,4 +1,4 @@
 import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
-r.set('msg', 'helloworld')
-r.get('msg')
+r.set('msg', 'mypyredtest')
+print(r.get('msg'))
